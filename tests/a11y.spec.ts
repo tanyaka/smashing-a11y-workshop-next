@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { AxeBuilder } from '@axe-core/playwright';
 
+// Accessibility tests using Axe and Playwright
+// see https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'];
 
 test('home page has no a11y issues', async ({ page }) => {
